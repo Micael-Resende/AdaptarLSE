@@ -230,6 +230,17 @@ int main() {
 
     lista.removerInicio();
     lista.removerFinal();
+
+    int numProcurado;
+    printf("Informe um numero: ");
+    scanf("%d", &numProcurado);
+
+    if(lista.buscarElemento(numProcurado)){// if(buscarValor(&l, 5))
+        printf("O %d esta na lista\n", numProcurado);
+    }else{
+        printf("O %d nao esta na lista\n", numProcurado);
+    }
+
     
     lista.buscarElemento();
     lista.removerRepetidos();
